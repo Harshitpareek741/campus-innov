@@ -92,11 +92,10 @@
   }
   
   /* Rest of your styles for buttons or other elements within the home-container */
-  .login-container{
-    
-  }
+ 
   .explore-container {
     opacity: 1;
     z-index: 1;
   }
+  
   

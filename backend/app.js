@@ -4,6 +4,11 @@ const collection = require("./mongo");
 const cors = require("cors");
 const company = require("./models/Company");
 const college = require("./models/college");
+const project = require("./models/Projects");
+const initdata = require("./data/projectdata");
+const itdata = require("./data/accendmics");
+const accad = require("./models/academics");
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -96,6 +101,44 @@ app.post("/college", async (req, res) => {
     }
    
   });
+  
+  const initDB = async() =>{
+    await project.insertMany(initdata.data);
+    console.log("Data transfered");
+  }
+
+initDB();
+
+  //list projects;
+  app.get("/projects" , async (req,res)=>{
+   let projects =  await project.find();
+   if(projects.length>0){
+    res.send(projects);
+   }
+   else{
+    res.send({result : "nothing found"});
+   }
+  });
+//using this function i sended all data to mongodb atlas project
+//also for accadmic
+
+const itDB = async() =>{
+  await accad.insertMany(itdata.data);
+  console.log("Data transfered");
+}
+
+itDB();
+
+//accad projects;
+app.get("/academics" , async (req,res)=>{
+ let accads =  await accad.find();
+ if(accads.length>0){
+  res.send(accads);
+ }
+ else{
+  res.send({result : "nothing found"});
+ }
+});
   app.listen(8000, () => {
     console.log("Server is running on port 8000");
   });

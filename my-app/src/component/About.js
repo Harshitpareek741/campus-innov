@@ -6,7 +6,7 @@ import Himanshu from './images/Himanshu.jpg'
 // import Hardik from './images/Hardik.jpg'
 import Bhavesh from './images/Bhavesh.jpg'
 import Gargi from './images/Gargi.jpg'
-
+import Hardik from './images/Hardik.jpg'
 
 
 
@@ -16,7 +16,7 @@ const AboutUs = () => {
      
 
       <section className="about">
-        <h1>About Us</h1>
+        <h1 className='name'>About Us</h1>
         <p style={{ fontWeight: 'bold' }}>Campus Innovations is a leading platform...</p>
         <div className="about-info">
           <div className="about-img">
@@ -32,7 +32,7 @@ const AboutUs = () => {
       </section>
 
       <section className="team">
-        <h1>Meet Our Team</h1>
+        <h1 className='name'>Meet Our Team</h1>
         <div className="team-cards">
           {/* Cards here */}
           {/* Card 1 */}
@@ -77,7 +77,7 @@ const AboutUs = () => {
           {/* Card 4 */}
           <div className="card">
             <div className="card-img">
-              {/* <img src={} alt="User 2" /> */}
+              <img src={Hardik} alt="User 2" />
             </div>
             <div className="card-info">
               <h2 className="card-name">Hardik Gupta</h2>

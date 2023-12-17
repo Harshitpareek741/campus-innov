@@ -13,7 +13,10 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import About from './component/About';
 import Indivup from './loginpages/Indivup';
 import Companyin from './loginpages/Companyin';
-import Indivin from './loginpages/Indivin'
+import Indivin from './loginpages/Indivin';
+import Explore from './component/Explore';
+import Project from './Products/Product';
+import Accad from './Products/accadmics';
 
 function App() {
   return (
@@ -24,20 +27,26 @@ function App() {
         </div>
         <div className="different">
           <Routes>
+          <Route path="/projects" element={<Project/>} />
+          <Route path="/accad" element={<Accad/>} />
             <Route path="/home" element={<Home />} />
           </Routes>
         </div>
         <Routes>
+        
           <Route path="/about" element={<About />} />
+         
         </Routes>
         <Routes>
+          
           <Route path="/login" element={<Login />} />
         </Routes>
         <div className="container">
           <Routes>
-          <Route path="/individualup" element={<Indivup />} />
-          <Route path="/individualin" element={<Indivin />} />
-            <Route path="/college" element={<College />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/individualup" element={<Indivup/>} />
+          <Route path="/individualin" element={<Indivin/>} />
+            <Route path="/college" element={<College/>} />
             <Route path="/company" element={<Companyin/>} />
           </Routes>
         </div>

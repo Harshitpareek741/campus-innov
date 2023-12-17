@@ -243,3 +243,9 @@ footer {
     margin: 0 1rem;
   }
 }
+
+.name{
+ display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+ }
