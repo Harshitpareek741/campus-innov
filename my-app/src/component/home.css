@@ -1,0 +1,102 @@
+/* Home.css */
+.home-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .login-button {
+    padding: 10px 15px;
+    background-color: #0a4973;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+ /* Your existing styles... */
+
+
+
+.login-button:hover {
+    background-color: #2980b9;
+    animation: pulse 1s infinite !important; /* Apply the pulse animation on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rest of your styles... */
+
+  
+  .explore-container {
+    margin-top: 20px;
+  }
+  
+  .explore-button {
+    padding: 15px 30px;
+    background-color: #24c168;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #0e7e3b;
+  }
+  
+  .explore-button:active {
+    transform: scale(0.95);
+  }
+  /* home.css */
+.home-container {
+    position: relative;
+  }
+  
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url('./images/logosomehingnew.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.4; /* Adjust the opacity value (between 0 and 1) */
+    z-index: 0;
+  }
+  
+  /* Rest of your styles for buttons or other elements within the home-container */
+  .login-container{
+    
+  }
+  .explore-container {
+    opacity: 1;
+    z-index: 1;
+  }
+  

@@ -1,0 +1,111 @@
+/* SignIn.css */
+.college {
+  margin-bottom: 10%; /* Adjusted for better responsiveness */
+  font-family: 'Arial', sans-serif;
+  font-size: 2em; /* Relative font size */
+  font-weight: bold;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Slightly reduced letter spacing for responsiveness */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: textWriter 2s steps(40) forwards;
+
+  /* Hover effect */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.college:hover {
+  transform: scale(1.05);
+  color: #1b54ff;
+}
+
+/* Text writer animation keyframes */
+@keyframes textWriter {
+  to {
+    width: 100%;
+  }
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 768px) {
+  .college {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .college {
+    font-size: 1.2em;
+  }
+}
+
+.sign-in-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .google-icon {
+    color: #dd4b39;
+    margin-right: 10px;
+  }
+  
+  .facebook-icon {
+    color: #3b5998;
+  }
+  

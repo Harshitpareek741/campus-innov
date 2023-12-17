@@ -1,0 +1,69 @@
+/* UserTypeSelection.css */
+.user-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .user-type-option {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+    color: #fff; /* Change the font color */
+  }
+  
+  .user-type-option:hover {
+    background-color: #3498db;
+    border-color: #2980b9;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .user-type-option:active {
+    transform: scale(0.95);
+  }
+  
+  /* Different colors for each button */
+  .college-button {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+  }
+  
+  .individual-button {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+  }
+  
+  .company-button {
+    background-color: #f39c12;
+    border-color: #d35400;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

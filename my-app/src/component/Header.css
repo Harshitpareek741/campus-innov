@@ -1,0 +1,64 @@
+/* Header.css */
+.body{
+    z-index: 1;
+}
+.navbar {
+    background-color: #ffffff !important; /* Whitish background color */
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Set a high z-index value */
+    
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #142435; /* Navbar brand text color */
+    font-family: 'Arial', sans-serif; /* Change the font family */
+  }
+  
+  .navbar-brand img.custom-logo {
+    width: 50px; /* Set the width of the logo image */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  .nav-link {
+    color: #343a40 !important; /* Navbar link text color */
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    transition: color 2.3s ease, font-weight 3.00s ease ; /* Adjust the timing function for smoother transitions */
+  }
+  
+  .nav-link:hover {
+    color: #007bff !important; /* Change the text color on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    transform: scale(1.1); /* Smoother zoom-in effect on hover */
+  }
+  
+  .navbar-toggler-icon {
+    color: black !important;
+    border-color: #000000 !important; /* Navbar toggle icon color */
+    background-color: black  !important;
+  }
+  
+  .dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown menu background color */
+  }
+  
+  .dropdown-item {
+    color: #343a40 !important; /* Dropdown item text color */
+    transition: background-color 3.3s ease, color 0.3s ease; /* Adjust the timing function for smoother transitions */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e2e6ea; /* Hover background color for dropdown items */
+    color: #343a40 !important; /* Hover text color for dropdown items */
+  }
+  
+  .about-link {
+    margin-left: auto;
+  }
+  
+  /* Add a fade-in transition effect for the navbar links */
+  .nav-item:hover .nav-link {
+    opacity: 0.7;
+  }
+  
