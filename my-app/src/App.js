@@ -29,11 +29,11 @@ function App() {
           <Routes>
           <Route path="/projects" element={<Project/>} />
           <Route path="/accad" element={<Accad/>} />
-            <Route path="/home" element={<Home />} />
+            
           </Routes>
         </div>
         <Routes>
-        
+        <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
          
         </Routes>

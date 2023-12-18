@@ -1,9 +1,18 @@
 // UserTypeSelection.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './UserTypeSelection.css';
+import {useNavigate} from 'react-router-dom';
+
 
 const UserTypeSelection = () => {
+  const navigate = useNavigate();
+
+  useEffect(()=>{
+    const auth = localStorage.getItem("college");
+    if(auth)navigate('/home');
+  });
+  
   return (
     <div className="user-type-container">
       <h1>Select Your User Type</h1>

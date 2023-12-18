@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const SignIn = () => {
     const navigation = useNavigate();
     const [Ugc_id, setUgc_id] = useState("");
@@ -22,6 +23,7 @@ const SignIn = () => {
         });
   
         if (response.data.status === "exist") {
+          localStorage.setItem("college",JSON.stringify(response));
           navigation("/home", { state: { id: Ugc_id } });
         } else if (response.data.status === "notexist") {
           toast.error("Incorrect Ugc_id or password", { position: toast.POSITION.TOP_CENTER });

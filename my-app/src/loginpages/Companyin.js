@@ -25,6 +25,7 @@ const Company = () => {
       });
 
       if (response.data.status === "exist") {
+        localStorage.setItem("college",JSON.stringify(response));
         navigation("/home", { state: { id: Tin_no } });
       } else if (response.data.status === "notexist") {
         toast.error("Incorrect Tin_no or password", { position: toast.POSITION.TOP_CENTER });

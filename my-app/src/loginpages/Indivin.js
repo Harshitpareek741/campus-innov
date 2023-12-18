@@ -22,6 +22,7 @@ const SignIn = () => {
         });
   
         if (response.data.status === "exist") {
+          localStorage.setItem("college",JSON.stringify(response));
           navigation("/home", { state: { id: email } });
         } else if (response.data.status === "notexist") {
           toast.error("Incorrect email or password", { position: toast.POSITION.TOP_CENTER });
